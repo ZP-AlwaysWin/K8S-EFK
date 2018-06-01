@@ -1,0 +1,117 @@
+2018-05-31 14:38:21,975 INFO    : Start deleting  Fluent Cluster!
+2018-05-31 14:39:20,489 INFO    : daemonset "fluentd-es-v0" deleted
+configmap "fluentd-es-config-v0" deleted
+serviceaccount "fluentd-es" deleted
+clusterrole "fluentd-es" deleted
+clusterrolebinding "fluentd-es" deleted
+2018-05-31 14:39:26,490 INFO    : Delete Fluent Cluster
+2018-05-31 14:42:48,621 ERROR   : The Elasticsearch Server is not exists! Forbid installing Fluent!
+2018-05-31 14:43:29,037 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-05-31 14:43:59,124 ERROR   : Fluent Cluster is not OK!
+2018-05-31 14:44:05,860 ERROR   : The Elasticsearch Server is not exists! Forbid expanding Fluent!
+2018-05-31 14:49:28,393 INFO    : Node IP that needs to collect logs is [u'172.20.0.132', u'172.20.0.157']
+2018-05-31 14:49:28,393 INFO    : Start labeling node
+2018-05-31 14:49:29,120 INFO    : Start installing fluent~
+2018-05-31 14:49:30,751 INFO    : Success, Installed fluent complete
+2018-05-31 14:50:04,355 ERROR   : Fluent Cluster is not OK!
+2018-05-31 14:50:13,343 INFO    : Expand fluent cluster complete! please run check_fluent_health command to expand if success!
+2018-05-31 14:52:04,008 INFO    : Start deleting  Fluent Cluster!
+2018-05-31 14:52:12,346 INFO    : Delete Fluent Cluster
+2018-05-31 14:52:17,651 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-05-31 14:52:23,699 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-05-31 14:54:02,810 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-05-31 14:54:11,598 ERROR   : The Fluent Cluster are not exists! Forbid expanding Fluent!
+2018-05-31 14:54:17,592 ERROR   : Fluent Cluster is not OK!
+2018-05-31 14:54:28,201 INFO    : Node IP that needs to collect logs is [u'172.20.0.132', u'172.20.0.157']
+2018-05-31 14:54:28,202 INFO    : Start labeling node
+2018-05-31 14:54:28,844 INFO    : Start installing fluent~
+2018-05-31 14:54:30,080 INFO    : Success, Installed fluent complete
+2018-05-31 14:54:58,769 ERROR   : Fluent cluster already exists, please do not repeat the installation
+2018-05-31 14:55:04,874 ERROR   : Fluent cluster already exists, please do not repeat the installation
+2018-05-31 14:55:10,504 INFO    : Fluent Cluster is OK!
+2018-05-31 14:55:20,782 INFO    : Expand fluent cluster complete! please run check_fluent_health command to expand if success!
+2018-05-31 14:56:15,724 ERROR   : Fluent cluster already exists, please do not repeat the installation
+2018-05-31 14:56:25,567 INFO    : Expand fluent cluster complete! please run check_fluent_health command to expand if success!
+2018-05-31 14:56:44,810 INFO    : Fluent Cluster is OK!
+2018-05-31 14:56:53,598 INFO    : Start deleting  Fluent Cluster!
+2018-05-31 14:57:56,664 INFO    : Delete Fluent Cluster
+2018-05-31 14:58:23,420 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-05-31 15:01:41,232 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-05-31 15:04:59,985 INFO    : Node IP that needs to collect logs is [u'172.20.0.132', u'172.20.0.157']
+2018-05-31 15:04:59,985 INFO    : Start labeling node
+2018-05-31 15:05:00,774 INFO    : Start installing fluent~
+2018-05-31 15:05:02,117 INFO    : Success, Installed fluent complete
+2018-05-31 15:06:03,258 INFO    : Fluent Cluster is OK!
+2018-05-31 15:26:53,495 INFO    : Fluent Cluster is OK!
+2018-05-31 15:27:05,423 INFO    : Fluent Cluster is OK!
+2018-05-31 15:27:57,223 INFO    : Fluent Cluster is OK!
+2018-05-31 15:28:50,232 INFO    : Start deleting  Fluent Cluster!
+2018-05-31 15:30:07,011 INFO    : Delete Fluent Cluster
+2018-05-31 15:32:29,603 ERROR   : Fluent Cluster is not OK!
+2018-05-31 15:34:08,221 ERROR   : Fluent Cluster is not OK!
+2018-05-31 15:34:18,368 ERROR   : Fluent Cluster is not OK!
+2018-05-31 15:34:44,184 ERROR   : Fluent Cluster is not OK!
+2018-05-31 15:34:47,521 ERROR   : Fluent Cluster is not OK!
+2018-05-31 15:34:50,041 ERROR   : Fluent Cluster is not OK!
+2018-05-31 15:34:52,612 ERROR   : Fluent Cluster is not OK!
+2018-05-31 15:55:44,930 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-05-31 16:07:49,324 ERROR   : Fluent Cluster is not OK!
+2018-05-31 16:14:40,248 ERROR   : Fluent Cluster is not OK!
+2018-05-31 16:14:51,303 ERROR   : Fluent Cluster is not OK!
+2018-05-31 16:14:54,549 ERROR   : Fluent Cluster is not OK!
+2018-05-31 16:17:55,114 INFO    : Node IP that needs to collect logs is [u'172.20.0.132', u'172.20.0.157']
+2018-05-31 16:17:55,114 INFO    : Start labeling node
+2018-05-31 16:17:55,796 INFO    : Start installing fluent~
+2018-05-31 16:17:57,320 INFO    : Success, Installed fluent complete
+2018-05-31 16:18:58,575 INFO    : Fluent Cluster is OK!
+2018-05-31 16:28:01,151 INFO    : Fluent Cluster is OK!
+2018-05-31 16:29:17,600 INFO    : Start deleting  Fluent Cluster!
+2018-05-31 16:30:17,454 INFO    : Delete Fluent Cluster
+2018-05-31 16:34:06,833 INFO    : Node IP that needs to collect logs is [u'172.20.0.132', u'172.20.0.157', u'172.20.0.159']
+2018-05-31 16:34:06,833 INFO    : Start labeling node
+2018-05-31 16:34:08,010 INFO    : Start installing fluent~
+2018-05-31 16:34:09,578 INFO    : Success, Installed fluent complete
+2018-05-31 16:35:10,900 INFO    : Fluent Cluster is OK!
+2018-05-31 16:45:07,174 INFO    : Fluent Cluster is OK!
+2018-05-31 16:48:12,488 INFO    : Fluent Cluster is OK!
+2018-06-01 08:55:40,181 INFO    : Fluent Cluster is OK!
+2018-06-01 08:57:13,601 INFO    : Start deleting  Fluent Cluster!
+2018-06-01 08:58:16,744 INFO    : Delete Fluent Cluster
+2018-06-01 09:01:25,681 INFO    : Node IP that needs to collect logs is [u'172.20.0.132', u'172.20.0.157', u'172.20.0.159']
+2018-06-01 09:01:25,682 INFO    : Start labeling node
+2018-06-01 09:01:26,994 INFO    : Start installing fluent~
+2018-06-01 09:01:28,462 INFO    : Success, Installed fluent complete
+2018-06-01 09:02:29,688 INFO    : Fluent Cluster is OK!
+2018-06-01 10:02:29,201 ERROR   : Fluent cluster already exists, please do not repeat the installation
+2018-06-01 10:02:35,228 INFO    : Fluent Cluster is OK!
+2018-06-01 10:02:42,982 INFO    : Fluent Cluster is OK!
+2018-06-01 10:04:23,280 INFO    : Start deleting  Fluent Cluster!
+2018-06-01 10:05:20,264 INFO    : Delete Fluent Cluster
+2018-06-01 10:08:11,194 ERROR   : The Fluent Cluster are not exists! Forbid expanding Fluent!
+2018-06-01 10:08:20,681 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-06-01 10:08:27,860 ERROR   : Fluent Cluster is not OK!
+2018-06-01 10:41:31,840 INFO    : Node IP that needs to collect logs is [u'172.20.0.132', u'172.20.0.157', u'172.20.0.159']
+2018-06-01 10:41:31,841 INFO    : Start labeling node
+2018-06-01 10:41:32,835 INFO    : Start installing fluent~
+2018-06-01 10:41:34,150 INFO    : Success, Installed fluent complete
+2018-06-01 10:42:48,682 ERROR   : Fluent cluster already exists, please do not repeat the installation
+2018-06-01 10:42:54,769 INFO    : Fluent Cluster is OK!
+2018-06-01 10:43:46,133 INFO    : Start deleting  Fluent Cluster!
+2018-06-01 10:44:57,117 INFO    : Delete Fluent Cluster
+2018-06-01 10:46:30,360 INFO    : Creating kube-efk namespace success
+2018-06-01 10:46:33,143 INFO    : Node IP that needs to collect logs is [u'172.20.0.132', u'172.20.0.157', u'172.20.0.159']
+2018-06-01 10:46:33,143 INFO    : Start labeling node
+2018-06-01 10:46:34,239 INFO    : Start installing fluent~
+2018-06-01 10:46:35,616 INFO    : Success, Installed fluent complete
+2018-06-01 10:54:31,712 ERROR   : Fluent cluster already exists, please do not repeat the installation
+2018-06-01 10:56:45,684 INFO    : Fluent Cluster is OK!
+2018-06-01 10:59:33,065 INFO    : Fluent Cluster is OK!
+2018-06-01 11:00:36,491 INFO    : Fluent Cluster is OK!
+2018-06-01 11:02:27,462 INFO    : Fluent Cluster is OK!
+2018-06-01 11:03:54,480 INFO    : Fluent Cluster is OK!
+2018-06-01 11:03:57,571 INFO    : Fluent Cluster is OK!
+2018-06-01 11:04:52,431 INFO    : Start deleting  Fluent Cluster!
+2018-06-01 11:05:56,506 INFO    : Delete Fluent Cluster
+2018-06-01 11:09:38,388 ERROR   : The Fluent Cluster is not exists! Forbid deleteing Fluent Cluster!
+2018-06-01 11:09:43,297 ERROR   : Fluent Cluster is not OK!
+2018-06-01 11:09:57,311 ERROR   : The Fluent Cluster are not exists! Forbid expanding Fluent!

@@ -1,0 +1,121 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: fluentd-es
+  namespace: kube-efk
+  labels:
+    k8s-app: fluentd-es
+    kubernetes/cluster-service: "true"
+    kubernetes.h3c.com: efk
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: fluentd-es
+  labels:
+    k8s-app: fluentd-es
+    kubernetes/cluster-service: "true"
+    kubernetes.h3c.com: efk
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - "namespaces"
+  - "pods"
+  verbs:
+  - "get"
+  - "watch"
+  - "list"
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: fluentd-es
+  labels:
+    k8s-app: fluentd-es
+    kubernetes/cluster-service: "true"
+    kubernetes.h3c.com: efk
+subjects:
+- kind: ServiceAccount
+  name: fluentd-es
+  namespace: kube-efk
+  apiGroup: ""
+roleRef:
+  kind: ClusterRole
+  name: fluentd-es
+  apiGroup: ""
+---
+apiVersion: apps/v1beta2
+kind: DaemonSet
+metadata:
+  name: fluentd-es-v0
+  namespace: kube-efk
+  labels:
+    k8s-app: fluentd-es
+    version: v0
+    kubernetes/cluster-service: "true"
+    kubernetes.h3c.com: efk
+spec:
+  selector:
+    matchLabels:
+      k8s-app: fluentd-es
+      version: v0
+  template:
+    metadata:
+      labels:
+        k8s-app: fluentd-es
+        kubernetes/cluster-service: "true"
+        version: v0
+      # This annotation ensures that fluentd does not get evicted if the node
+      # supports critical pod annotation based priority scheme.
+      # Note that this does not guarantee admission on the nodes (#40573).
+      annotations:
+        scheduler.alpha.kubernetes.io/critical-pod: ''
+    spec:
+      serviceAccountName: fluentd-es
+      containers:
+      - name: fluentd-es
+        image: h3crd-wlan1.chinacloudapp.cn:5000/fluentd-elasticsearch:v0
+        command: ["/bin/sh","/etc/fluent/config.d/start.sh"]
+        env:
+        - name: FLUENTD_ARGS
+          value: --no-supervisor -q
+        resources:
+          limits:
+            memory: 500Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
+        volumeMounts:
+        - name: varlog
+          mountPath: /var/log
+        - name: varlibdockercontainers
+          mountPath: /var/lib/docker/containers
+          readOnly: true
+        - name: libsystemddir
+          mountPath: /host/lib
+          readOnly: true
+        - name: config-volume
+          mountPath: /etc/fluent/config.d
+        - name: host-time
+          mountPath: /etc/localtime
+      nodeSelector:
+        kubernetes-h3c/fluentd-ds-ready: "true"
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: varlog
+        hostPath:
+          path: /var/log
+      - name: varlibdockercontainers
+        hostPath:
+          path: /var/lib/docker/containers
+      - name: host-time
+        hostPath:
+          path: /etc/localtime
+      # It is needed to copy systemd library to decompress journals
+      - name: libsystemddir
+        hostPath:
+          path: /usr/lib64
+      - name: config-volume
+        configMap:
+          name: fluentd-es-config-v0

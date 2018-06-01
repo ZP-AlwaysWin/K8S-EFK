@@ -1,0 +1,168 @@
+2018-05-31 15:26:52,332 INFO    : Starting checking all EFK health
+2018-05-31 15:26:52,333 INFO    : Starting checking fluent cluster health
+2018-05-31 15:26:53,496 INFO    : Fluent cluster already in a state of health
+2018-05-31 15:26:53,496 INFO    : Starting checking elasticsearch cluster health
+2018-05-31 15:26:54,466 INFO    : Elasticsearch cluster already in a state of health
+2018-05-31 15:26:54,466 INFO    : Starting checking kibana health
+2018-05-31 15:26:56,959 INFO    : Kibana already in a state of health
+2018-05-31 15:26:56,960 INFO    : All EFK cluster already in a state of health
+2018-05-31 15:27:04,286 INFO    : Starting checking all EFK health
+2018-05-31 15:27:04,286 INFO    : Starting checking fluent cluster health
+2018-05-31 15:27:05,424 INFO    : Fluent cluster already in a state of health
+2018-05-31 15:27:05,424 INFO    : Starting checking elasticsearch cluster health
+2018-05-31 15:27:06,402 INFO    : Elasticsearch cluster already in a state of health
+2018-05-31 15:27:06,403 INFO    : Starting checking kibana health
+2018-05-31 15:27:08,586 INFO    : Kibana already in a state of health
+2018-05-31 15:27:08,587 INFO    : All EFK cluster already in a state of health
+2018-05-31 15:27:55,755 INFO    : Starting checking all EFK health
+2018-05-31 15:27:55,755 INFO    : Starting checking fluent cluster health
+2018-05-31 15:27:57,223 INFO    : Fluent cluster already in a state of health
+2018-05-31 15:27:57,223 INFO    : Starting checking elasticsearch cluster health
+2018-05-31 15:27:58,209 INFO    : Elasticsearch cluster already in a state of health
+2018-05-31 15:27:58,210 INFO    : Starting checking kibana health
+2018-05-31 15:28:00,422 INFO    : Kibana already in a state of health
+2018-05-31 15:28:00,422 INFO    : All EFK cluster already in a state of health
+2018-05-31 15:32:26,932 INFO    : Starting checking all EFK health
+2018-05-31 15:32:26,933 INFO    : Starting checking fluent cluster health
+2018-05-31 15:32:29,604 ERROR   : Fluent cluster not in a state of health
+2018-05-31 15:32:29,604 ERROR   : All EFK cluster not in a state of health
+2018-05-31 15:34:07,234 INFO    : Starting checking all EFK health
+2018-05-31 15:34:07,234 INFO    : Starting checking fluent cluster health
+2018-05-31 15:34:08,222 ERROR   : Fluent cluster not in a state of health
+2018-05-31 15:34:08,222 ERROR   : All EFK cluster not in a state of health
+2018-05-31 15:34:17,492 INFO    : Starting checking all EFK health
+2018-05-31 15:34:17,492 INFO    : Starting checking fluent cluster health
+2018-05-31 15:34:18,368 ERROR   : Fluent cluster not in a state of health
+2018-05-31 15:34:18,368 ERROR   : All EFK cluster not in a state of health
+2018-05-31 15:34:43,252 INFO    : Starting checking all EFK health
+2018-05-31 15:34:43,258 INFO    : Starting checking fluent cluster health
+2018-05-31 15:34:44,184 ERROR   : Fluent cluster not in a state of health
+2018-05-31 15:34:44,184 ERROR   : All EFK cluster not in a state of health
+2018-05-31 15:34:46,614 INFO    : Starting checking all EFK health
+2018-05-31 15:34:46,615 INFO    : Starting checking fluent cluster health
+2018-05-31 15:34:47,522 ERROR   : Fluent cluster not in a state of health
+2018-05-31 15:34:47,522 ERROR   : All EFK cluster not in a state of health
+2018-05-31 15:34:49,155 INFO    : Starting checking all EFK health
+2018-05-31 15:34:49,155 INFO    : Starting checking fluent cluster health
+2018-05-31 15:34:50,042 ERROR   : Fluent cluster not in a state of health
+2018-05-31 15:34:50,042 ERROR   : All EFK cluster not in a state of health
+2018-05-31 15:34:51,553 INFO    : Starting checking all EFK health
+2018-05-31 15:34:51,553 INFO    : Starting checking fluent cluster health
+2018-05-31 15:34:52,613 ERROR   : Fluent cluster not in a state of health
+2018-05-31 15:34:52,613 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:07:48,488 INFO    : Starting checking all EFK health
+2018-05-31 16:07:48,488 INFO    : Starting checking fluent cluster health
+2018-05-31 16:07:49,325 ERROR   : Fluent cluster not in a state of health
+2018-05-31 16:07:49,325 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:14:10,713 INFO    : Starting checking all EFK health
+2018-05-31 16:14:10,980 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:14:10,981 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:14:14,310 INFO    : Starting checking all EFK health
+2018-05-31 16:14:14,641 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:14:14,642 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:14:16,095 INFO    : Starting checking all EFK health
+2018-05-31 16:14:16,409 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:14:16,409 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:14:38,813 INFO    : Starting checking all EFK health
+2018-05-31 16:14:39,358 INFO    : Starting checking fluent cluster health
+2018-05-31 16:14:40,248 ERROR   : Fluent cluster not in a state of health
+2018-05-31 16:14:40,249 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:14:49,932 INFO    : Starting checking all EFK health
+2018-05-31 16:14:50,420 INFO    : Starting checking fluent cluster health
+2018-05-31 16:14:51,304 ERROR   : Fluent cluster not in a state of health
+2018-05-31 16:14:51,304 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:14:52,666 INFO    : Starting checking all EFK health
+2018-05-31 16:14:53,451 INFO    : Starting checking fluent cluster health
+2018-05-31 16:14:54,549 ERROR   : Fluent cluster not in a state of health
+2018-05-31 16:14:54,550 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:15:42,424 INFO    : Starting checking all EFK health
+2018-05-31 16:15:44,292 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:15:44,293 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:15:46,633 INFO    : Starting checking all EFK health
+2018-05-31 16:15:46,959 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:15:46,966 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:15:48,447 INFO    : Starting checking all EFK health
+2018-05-31 16:15:48,767 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:15:48,767 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:15:50,334 INFO    : Starting checking all EFK health
+2018-05-31 16:15:50,679 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:15:50,679 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:16:10,440 INFO    : Starting checking all EFK health
+2018-05-31 16:16:10,757 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:16:10,758 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:16:24,281 INFO    : Starting checking all EFK health
+2018-05-31 16:16:24,570 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:16:24,571 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:16:26,574 INFO    : Starting checking all EFK health
+2018-05-31 16:16:27,043 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:16:27,049 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:16:29,080 INFO    : Starting checking all EFK health
+2018-05-31 16:16:29,412 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:16:29,413 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:27:59,388 INFO    : Starting checking all EFK health
+2018-05-31 16:27:59,963 INFO    : Starting checking fluent cluster health
+2018-05-31 16:28:01,152 INFO    : Fluent cluster already in a state of health
+2018-05-31 16:28:01,152 INFO    : Starting checking elasticsearch cluster health
+2018-05-31 16:28:02,079 INFO    : Elasticsearch cluster already in a state of health
+2018-05-31 16:28:02,080 INFO    : Starting checking kibana health
+2018-05-31 16:28:04,306 INFO    : Kibana already in a state of health
+2018-05-31 16:28:04,307 INFO    : All EFK cluster already in a state of health
+2018-05-31 16:32:50,968 INFO    : Starting checking all EFK health
+2018-05-31 16:32:51,260 ERROR   : Kubernetes Cluster don't exist kube-efk namespace
+2018-05-31 16:32:51,260 ERROR   : All EFK cluster not in a state of health
+2018-05-31 16:45:05,329 INFO    : Starting checking all EFK health
+2018-05-31 16:45:05,959 INFO    : Starting checking fluent cluster health
+2018-05-31 16:45:07,175 INFO    : Fluent cluster already in a state of health
+2018-05-31 16:45:07,175 INFO    : Starting checking elasticsearch cluster health
+2018-05-31 16:45:08,447 INFO    : Elasticsearch cluster already in a state of health
+2018-05-31 16:45:08,448 INFO    : Starting checking kibana health
+2018-05-31 16:45:10,786 INFO    : Kibana already in a state of health
+2018-05-31 16:45:10,786 INFO    : All EFK cluster already in a state of health
+2018-05-31 16:48:08,969 INFO    : Starting checking all EFK health
+2018-05-31 16:48:11,326 INFO    : Starting checking fluent cluster health
+2018-05-31 16:48:12,488 INFO    : Fluent cluster already in a state of health
+2018-05-31 16:48:12,488 INFO    : Starting checking elasticsearch cluster health
+2018-05-31 16:48:13,424 INFO    : Elasticsearch cluster already in a state of health
+2018-05-31 16:48:13,424 INFO    : Starting checking kibana health
+2018-05-31 16:48:15,462 INFO    : Kibana already in a state of health
+2018-05-31 16:48:15,462 INFO    : All EFK cluster already in a state of health
+2018-06-01 08:55:38,492 INFO    : Starting checking all EFK health
+2018-06-01 08:55:39,064 INFO    : Starting checking fluent cluster health
+2018-06-01 08:55:40,181 INFO    : Fluent cluster already in a state of health
+2018-06-01 08:55:40,181 INFO    : Starting checking elasticsearch cluster health
+2018-06-01 08:55:41,256 INFO    : Elasticsearch cluster already in a state of health
+2018-06-01 08:55:41,257 INFO    : Starting checking kibana health
+2018-06-01 08:55:43,543 INFO    : Kibana already in a state of health
+2018-06-01 08:55:43,543 INFO    : All EFK cluster already in a state of health
+2018-06-01 10:56:43,937 INFO    : Starting checking all EFK health
+2018-06-01 10:56:44,468 INFO    : Starting checking fluent cluster health
+2018-06-01 10:56:45,685 INFO    : Fluent cluster already in a state of health
+2018-06-01 10:56:45,685 INFO    : Starting checking elasticsearch cluster health
+2018-06-01 10:59:31,487 INFO    : Starting checking all EFK health
+2018-06-01 10:59:31,989 INFO    : Starting checking fluent cluster health
+2018-06-01 10:59:33,066 INFO    : Fluent cluster already in a state of health
+2018-06-01 10:59:33,066 INFO    : Starting checking elasticsearch cluster health
+2018-06-01 11:00:34,743 INFO    : Starting checking all EFK health
+2018-06-01 11:00:35,260 INFO    : Starting checking fluent cluster health
+2018-06-01 11:00:36,491 INFO    : Fluent cluster already in a state of health
+2018-06-01 11:00:36,491 INFO    : Starting checking elasticsearch cluster health
+2018-06-01 11:00:36,820 ERROR   : Elasticsearch cluster not in a state of health
+2018-06-01 11:00:36,820 ERROR   : All EFK cluster not in a state of health
+2018-06-01 11:02:25,633 INFO    : Starting checking all EFK health
+2018-06-01 11:02:26,228 INFO    : Starting checking fluent cluster health
+2018-06-01 11:02:27,462 INFO    : Fluent cluster already in a state of health
+2018-06-01 11:02:27,463 INFO    : Starting checking elasticsearch cluster health
+2018-06-01 11:02:27,783 ERROR   : Elasticsearch cluster not in a state of health
+2018-06-01 11:02:27,784 ERROR   : All EFK cluster not in a state of health
+2018-06-01 11:03:52,803 INFO    : Starting checking all EFK health
+2018-06-01 11:03:53,366 INFO    : Starting checking fluent cluster health
+2018-06-01 11:03:54,480 INFO    : Fluent cluster already in a state of health
+2018-06-01 11:03:54,480 INFO    : Starting checking elasticsearch cluster health
+2018-06-01 11:03:54,810 ERROR   : Elasticsearch cluster not in a state of health
+2018-06-01 11:03:54,811 ERROR   : All EFK cluster not in a state of health
+2018-06-01 11:03:55,740 INFO    : Starting checking all EFK health
+2018-06-01 11:03:56,320 INFO    : Starting checking fluent cluster health
+2018-06-01 11:03:57,571 INFO    : Fluent cluster already in a state of health
+2018-06-01 11:03:57,571 INFO    : Starting checking elasticsearch cluster health
+2018-06-01 11:03:57,906 ERROR   : Elasticsearch cluster not in a state of health
+2018-06-01 11:03:57,906 ERROR   : All EFK cluster not in a state of health

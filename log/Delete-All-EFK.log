@@ -1,0 +1,90 @@
+2018-05-31 14:37:45,773 INFO    : Starting deleting EFK cluster
+2018-05-31 14:37:48,018 INFO    : Start deleting elasticsearch cluster
+2018-05-31 14:38:18,045 INFO    : Delete elasticsearch cluster success
+2018-05-31 14:39:36,492 INFO    : Start deleting Kibana
+2018-05-31 14:39:46,924 INFO    : Delete Kibana success
+2018-05-31 14:39:57,276 INFO    : Delete namespace kube-efk success
+2018-05-31 14:40:57,381 INFO    : Etcd cluster Non-existent kube-efk
+2018-05-31 14:40:57,420 INFO    : Deleting EFK cluster success
+2018-05-31 14:41:50,157 INFO    : Starting deleting EFK cluster
+2018-05-31 14:41:50,465 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 14:41:52,696 INFO    : Starting deleting EFK cluster
+2018-05-31 14:41:52,989 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 14:41:54,893 INFO    : Starting deleting EFK cluster
+2018-05-31 14:41:55,189 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 14:41:56,859 INFO    : Starting deleting EFK cluster
+2018-05-31 14:41:57,187 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 15:01:24,103 INFO    : Starting deleting EFK cluster
+2018-05-31 15:01:24,630 INFO    : Start deleting elasticsearch cluster
+2018-05-31 15:01:38,028 INFO    : Delete elasticsearch cluster success
+2018-05-31 15:01:51,237 ERROR   : Delete fluent cluster failure
+2018-05-31 15:01:51,237 INFO    : Start deleting Kibana
+2018-05-31 15:01:58,127 ERROR   : Delete Kibana occur unknown error
+2018-05-31 15:02:08,546 INFO    : Delete namespace kube-efk success
+2018-05-31 15:03:08,642 INFO    : Etcd cluster Non-existent kube-efk
+2018-05-31 15:03:08,701 INFO    : Deleting EFK cluster success
+2018-05-31 15:03:30,423 INFO    : Starting deleting EFK cluster
+2018-05-31 15:03:30,705 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 15:28:14,872 INFO    : Starting deleting EFK cluster
+2018-05-31 15:28:15,391 INFO    : Start deleting elasticsearch cluster
+2018-05-31 15:28:46,425 INFO    : Delete elasticsearch cluster success
+2018-05-31 15:30:17,020 INFO    : Start deleting Kibana
+2018-05-31 15:30:27,516 INFO    : Delete Kibana success
+2018-05-31 15:30:37,849 INFO    : Delete namespace kube-efk success
+2018-05-31 15:31:37,947 INFO    : Etcd cluster Non-existent kube-efk
+2018-05-31 15:31:37,993 INFO    : Deleting EFK cluster success
+2018-05-31 15:35:17,579 INFO    : Starting deleting EFK cluster
+2018-05-31 15:35:17,921 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 15:35:21,398 INFO    : Starting deleting EFK cluster
+2018-05-31 15:35:21,708 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 15:55:27,181 INFO    : Starting deleting EFK cluster
+2018-05-31 15:55:27,901 INFO    : Start deleting elasticsearch cluster
+2018-05-31 15:55:41,624 INFO    : Delete elasticsearch cluster success
+2018-05-31 15:55:54,932 ERROR   : Delete fluent cluster failure
+2018-05-31 15:55:54,932 INFO    : Start deleting Kibana
+2018-05-31 15:56:01,908 ERROR   : Delete Kibana occur unknown error
+2018-05-31 15:56:12,221 INFO    : Delete namespace kube-efk success
+2018-05-31 15:57:12,340 INFO    : Etcd cluster Non-existent kube-efk
+2018-05-31 15:57:12,370 INFO    : Deleting EFK cluster success
+2018-05-31 15:57:23,828 INFO    : Starting deleting EFK cluster
+2018-05-31 15:57:24,206 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 16:07:42,140 INFO    : Starting deleting EFK cluster
+2018-05-31 16:07:42,449 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-05-31 16:28:37,042 INFO    : Starting deleting EFK cluster
+2018-05-31 16:28:37,665 INFO    : Start deleting elasticsearch cluster
+2018-05-31 16:29:13,580 INFO    : Delete elasticsearch cluster success
+2018-05-31 16:30:27,465 INFO    : Start deleting Kibana
+2018-05-31 16:30:37,947 INFO    : Delete Kibana success
+2018-05-31 16:30:48,295 INFO    : Delete namespace kube-efk success
+2018-05-31 16:31:48,400 INFO    : Etcd cluster Non-existent kube-efk
+2018-05-31 16:31:48,434 INFO    : Deleting EFK cluster success
+2018-05-31 16:31:53,118 INFO    : Starting deleting EFK cluster
+2018-05-31 16:31:53,414 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-06-01 08:56:22,345 INFO    : Starting deleting EFK cluster
+2018-06-01 08:56:22,942 INFO    : Start deleting elasticsearch cluster
+2018-06-01 08:57:09,405 INFO    : Delete elasticsearch cluster success
+2018-06-01 08:58:26,755 INFO    : Start deleting Kibana
+2018-06-01 08:58:37,484 INFO    : Delete Kibana success
+2018-06-01 08:58:47,811 INFO    : Delete namespace kube-efk success
+2018-06-01 08:59:47,937 INFO    : Etcd cluster Non-existent kube-efk
+2018-06-01 08:59:47,988 INFO    : Deleting EFK cluster success
+2018-06-01 10:03:37,503 INFO    : Starting deleting EFK cluster
+2018-06-01 10:03:38,028 INFO    : Start deleting elasticsearch cluster
+2018-06-01 10:04:19,328 INFO    : Delete elasticsearch cluster success
+2018-06-01 10:05:30,270 INFO    : Start deleting Kibana
+2018-06-01 10:05:41,135 INFO    : Delete Kibana success
+2018-06-01 10:05:51,569 INFO    : Delete namespace kube-efk success
+2018-06-01 10:06:51,679 INFO    : Etcd cluster Non-existent kube-efk
+2018-06-01 10:06:51,720 INFO    : Deleting EFK cluster success
+2018-06-01 11:04:32,880 INFO    : Starting deleting EFK cluster
+2018-06-01 11:04:35,019 INFO    : Start deleting elasticsearch cluster
+2018-06-01 11:04:48,389 INFO    : Delete elasticsearch cluster success
+2018-06-01 11:06:06,516 INFO    : Start deleting Kibana
+2018-06-01 11:06:13,431 ERROR   : Delete Kibana occur unknown error
+2018-06-01 11:06:23,791 INFO    : Delete namespace kube-efk success
+2018-06-01 11:07:23,885 INFO    : Etcd cluster Non-existent kube-efk
+2018-06-01 11:07:23,930 INFO    : Deleting EFK cluster success
+2018-06-01 11:08:54,578 INFO    : Starting deleting EFK cluster
+2018-06-01 11:08:54,880 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
+2018-06-01 11:08:56,989 INFO    : Starting deleting EFK cluster
+2018-06-01 11:08:57,319 ERROR   : Kubernetes Cluster Non-existent EFK, Please do not repeat the deletion
