@@ -1,0 +1,85 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch
+  namespace: kube-efk
+  labels:
+    app: elasticsearch
+spec:
+  ports:
+  - port: 9200
+    name: es-1
+  - port: 9300
+    name: es-2
+  selector:
+    app: elasticsearch
+
+---
+
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  name: elasticsearch
+  namespace: kube-efk
+spec:
+  serviceName: "elasticsearch"
+  replicas: replicas_num
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+    spec:
+      nodeSelector:
+        es: elasticsearch
+      volumes:
+      - name: es-config
+        configMap:
+          name: es-configmap
+      - name: host-time
+        hostPath:
+          path: /etc/localtime
+      - name: es-datadir
+        hostPath:
+          path: HOST_PATH_VALUE
+      hostNetwork: true
+      containers:
+      - name: esc
+        image: h3crd-wlan1.chinacloudapp.cn:5000/elasticsearch-564-v2:v0625
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            memory: "3000Mi"
+            cpu: "0.5"
+        ports:
+        - name: es-1
+          containerPort: 9200
+        - name: es-2
+          containerPort: 9300
+        env:
+        - name: MY_POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: MY_POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+        - name: CLUSTER_NAME
+          value: elasticsearch-cluster
+        volumeMounts:
+        - name: es-datadir
+          mountPath: /usr/share/elasticsearch/data
+        - name: es-config
+          #mountPath: /usr/share/elasticsearch/config
+          mountPath: /home/elasticsearch/config
+        - name: host-time
+          mountPath: /etc/localtime
+        securityContext:
+          capabilities: {}
+          privileged: true
+      initContainers:
+      - image: h3crd-wlan1.chinacloudapp.cn:5000/alpine:3.6
+        command: ["/sbin/sysctl", "-w", "vm.max_map_count=262144"]
+        name: elasticsearch-logging-init
+        securityContext:
+          privileged: true

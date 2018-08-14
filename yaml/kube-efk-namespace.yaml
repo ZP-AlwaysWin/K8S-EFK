@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kube-efk
+
+---
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ceph-secret
+  namespace: kube-efk
+type: "kubernetes.io/rbd"  
+data:
+  key: QVFDemkwQmJYT25hSWhBQWo5VFhReVNiM1NvUnJyRnlnY1RKYXc9PQ==
+

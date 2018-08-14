@@ -1,0 +1,15 @@
+{
+  "elasticsearch": {
+    "node_ips": [
+      "172.20.0.36"
+    ]
+  }, 
+  "scale": {
+    "new_ips": []
+  }, 
+  "storage": {
+    "hostPath": "true", 
+    "pathDir": "/Elasticsearch", 
+    "size": "10"
+  }
+}

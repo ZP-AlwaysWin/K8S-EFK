@@ -1,0 +1,98 @@
+kind: ConfigMap
+apiVersion: v1
+data:
+  containers.input.conf: |-
+    <source>
+      @type tail
+      path /var/log/containers/*.log
+      exclude_path ["/var/log/containers/elasticsearch*.log","/var/log/containers/fluentd*.log","/var/log/containers/kibana*.log","/var/log/containers/kube*.log","/var/log/containers/logrotate*.log","/var/log/containers/prometheus*.log","/var/log/containers/shard*.log","/var/log/containers/redis*.log","/var/log/containers/rabbitmq*.log","/var/log/containers/mongos*.log","/var/log/containers/hdfs*.log","/var/log/containers/kong*.log","/var/log/containers/fastdfs*.log","/var/log/containers/config*.log","/var/log/containers/cassandra*.log","/var/log/containers/grafana*.log","/var/log/containers/ceph*.log","/var/log/containers/maxscale*.log","/var/log/containers/mariadb*.log"]
+      pos_file /var/log/es-containers.log.pos
+      tag kubernetes.*
+      read_from_head true
+      <parse>
+        @type json
+        time_type string
+        time_format %Y-%m-%dT%H:%M:%S.%NZ
+        timezone "+00:00"
+      </parse>
+    </source>
+  output.conf: |-
+    <filter kubernetes.**>
+      @type kubernetes_metadata
+    </filter>
+    <filter kubernetes.**>
+      @type record_transformer
+      remove_keys $.kubernetes.labels,$.kubernetes.namespace_labels,$.kubernetes.master_url,$.kubernetes.host,$.kubernetes.pod_id,$.kubernetes.container_name,$.kubernetes.namespace_name,$.kubernetes.namespace_id,$.kubernetes.namespace_annotations,$.kubernetes.master_url,docker
+    </filter>
+    <match **>
+       @type elasticsearch
+       @log_level info
+       include_tag_key false
+       host elasticsearch
+       port 9200
+       logstash_format true
+       id_key             _hash # specify same key name which is specified in hash_id_key
+       remove_keys        _hash # Elasticsearch doesn't like keys that start with _
+       # Set the chunk limits.
+       buffer_type memory
+       buffer_chunk_limit 4M
+       buffer_queue_limit 256
+       flush_interval 6s
+       slow_flush_log_threshold 180.0
+       # Never wait longer than 5 minutes between retries.
+       max_retry_wait 30
+       # Disable the limit on the number of retries (retry forever).
+       disable_retry_limit
+       # Use multiple threads for processing.
+       num_threads 4
+       queued_chunk_flush_interval 1
+       retry_limit 17
+       disable_retry_limit false
+       flush_at_shutdown true
+       request_timeout 60
+       reload_connections false
+       reload_on_failure true
+    </match>
+  fluent.conf-bak: |-
+    # This is the root config file, which only includes components of the actual configuration
+
+    # Do not collect fluentd's own logs to avoid infinite loops.
+    <match fluent.**>
+      @type null
+    </match>
+
+    @include /etc/fluent/config.d/*.conf
+  start.sh: |-
+    #!/bin/sh
+
+    cp /etc/fluent/config.d/fluent.conf-bak /etc/fluent/fluent.conf
+
+    # Copyright 2017 The Kubernetes Authors.
+    #
+    # Licensed under the Apache License, Version 2.0 (the "License");
+    # you may not use this file except in compliance with the License.
+    # You may obtain a copy of the License at
+    #
+    #     http://www.apache.org/licenses/LICENSE-2.0
+    #
+    # Unless required by applicable law or agreed to in writing, software
+    # distributed under the License is distributed on an "AS IS" BASIS,
+    # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    # See the License for the specific language governing permissions and
+    # limitations under the License.
+
+    # These steps must be executed once the host /var and /lib volumes have
+    # been mounted, and therefore cannot be done in the docker build stage.
+
+    # For systems without journald
+    mkdir -p /var/log/journal
+    #exec /usr/local/bin/fluentd $@
+    exec /usr/local/bin/fluentd $FLUENTD_ARGS
+    # exec /usr/local/bin/fluentd --no-supervisor -q
+
+    
+metadata:
+  name: fluentd-es-config-v0
+  namespace: kube-efk
+  labels:
+    kubernetes.h3c.com: efk
